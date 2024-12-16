@@ -22,6 +22,10 @@ dependencies {
   api("org.apache.logging.log4j:log4j:$log4j")
   api("org.apache.logging.log4j:log4j-core:$log4j")
   api("org.apache.logging.log4j:log4j-api:$log4j")
+
+  implementation("org.jetbrains.kotlinx:multik-core:0.2.3")
+  implementation("org.jetbrains.kotlinx:multik-default:0.2.3")
+
   // For log4j2 config.
   implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.0")
 
@@ -48,7 +52,7 @@ spotless {
   }
 }
 
-application { mainClass.set("com.hopskipnfall.MainKt") }
+application { mainClass.set("com.hopskipnfall.adventofcode2024.MainKt") }
 
 // "jar" task makes a single jar including all dependencies.
 tasks.jar {

@@ -1,1 +1,1 @@
-rootProject.name = "kotlin-jvm-gradle"
+rootProject.name = "advent-of-code-2024"

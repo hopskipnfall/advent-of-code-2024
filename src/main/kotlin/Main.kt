@@ -1,8 +1,6 @@
-package com.hopskipnfall
+package com.hopskipnfall.adventofcode2024
 
-import com.google.common.flogger.FluentLogger
-
-private val logger = FluentLogger.forEnclosingClass()
+import com.hopskipnfall.adventofcode2024.days.day01
 
 fun main() {
   // Use log4j as the flogger backend.
@@ -11,5 +9,5 @@ fun main() {
     "com.google.common.flogger.backend.log4j2.Log4j2BackendFactory#getInstance"
   )
 
-  logger.atInfo().log("Hello World")
+  day01()
 }
